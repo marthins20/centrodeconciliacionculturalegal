@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Centro de Conciliación</title>
+  <link rel="stylesheet" href="login.css" />
+  <link rel="stylesheet" href="estilocursos.css" />
+  <link rel="stylesheet" href="estilo_inicio.css" />
+  <link rel="icon" href="img/logof.jpg" type="image/x-icon">
+  <link rel="shortcut icon" href="img/logof.jpg" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/logof.jpg">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/logof.jpg">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header solid">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="img/logof.jpg" alt="Logo Centro">
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="agenda.html">Agendar Cita</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="aula.html">Aula Virtual</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="login.html" class="active">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Login split-screen -->
+  <main class="login-main">
+    <div class="login-container">
+      <div class="login-image"></div>
+      <div class="login-form-wrapper">
+        <h2>Bienvenido</h2>
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="username">Usuario</label>
+            <input id="username" type="text" placeholder="Ingresa tu usuario" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Contraseña</label>
+            <input id="password" type="password" placeholder="Ingresa tu contraseña" required />
+          </div>
+          <button type="submit" class="btn">Ingresar</button>
+          <p class="register-link">
+            ¿No tienes cuenta? <a href="register.html">Regístrate</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-empresarial">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="img/logof.jpg" alt="Logo">
+        <span>Cultura legal</span>
+      </div>
+      <div class="footer-links">
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-contacto">
+        <h4>Contacto</h4>
+        <p>
+          Valledupar, Colombia<br>
+          Tel: (601) 123-4567<br>
+          Email: <a href="mailto:info@mmserviciosti.com">info@mmserviciosti.com</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Cultura legal. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

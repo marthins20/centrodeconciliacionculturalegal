@@ -1,0 +1,364 @@
+/* ===== Variables de color ===== */
+:root {
+  --primary:       #005baa;
+  --primary-dark:  #1976d2;
+  --light-bg:      #f9f9f9;
+  --text:          #333;
+  --card-bg:       #fff;
+  --shadow:        rgba(0,0,0,0.1);
+}
+
+/* ===== Reset y Global ===== */
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+}
+/* ===== Global ===== */
+/* ===== Global ===== */
+body, html {
+  margin: 0; padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+/* Centrar específicamente el h2 en .main-content */
+.sections.main-content h2 {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto 1.5rem;
+}
+
+/* Header */
+.header {
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #005baa;
+}
+.header {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky; top: 0; z-index: 1000;
+}
+.header .container {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1rem;
+}
+.logo img {
+  height: 50px;
+  animation: bounce 2s infinite;
+}
+/* Animación de rebote */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.nav-links {
+  list-style: none; display: flex; gap: 1rem; margin: 0; padding: 0;
+}
+.nav-links a {
+  padding: 0.5rem 1rem; border-radius: 4px; text-decoration: none; color: #333;
+}
+.nav-links a.active,
+.nav-links a:hover {
+  background: #e0f0ff; color: #005baa;
+}
+.footer {
+  background: #333; color: #fff; text-align: center; padding: 1rem; margin-top: 2rem;
+}
+
+/* ===== Intro ===== */
+.sections.intro {
+  padding: 2rem 0 1rem;
+}
+.sections.intro h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--primary);
+}
+.sections.intro p {
+  text-align: center;
+  color: var(--primary-dark);
+  margin-top: .5rem;
+}
+
+/* ===== Contact Section ===== */
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem 0 4rem;
+}
+@media (max-width: 768px) {
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tarjetas de información */
+.contact-info .info-card {
+  background: var(--card-bg);
+  display: flex; align-items: flex-start;
+  padding: 1.2rem; border-radius: 8px;
+  box-shadow: 0 4px 12px var(--shadow);
+  margin-bottom: 1rem;
+}
+.info-card img {
+  width: 40px; margin-right: 1rem;
+}
+.info-card h3 {
+  margin: 0 0 .3rem;
+  color: var(--primary-dark);
+}
+.info-card p,
+.info-card a {
+  margin: 0; color: var(--text);
+  text-decoration: none;
+}
+.info-card a:hover {
+  text-decoration: underline;
+}
+
+/* Mapa */
+.map-card {
+  padding: 0;
+  overflow: hidden;
+}
+.map-card iframe {
+  width: 100%; height: 200px;
+  border: 0; border-radius: 8px;
+}
+
+/* Formulario */
+.contact-form {
+  background: var(--card-bg);
+  padding: 2rem; border-radius: 8px;
+  box-shadow: 0 4px 12px var(--shadow);
+}
+.contact-form .form-group {
+  margin-bottom: 1.2rem;
+}
+.contact-form label {
+  display: block; margin-bottom: .5rem;
+  font-weight: 600;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%; padding: .75rem;
+  border: 1px solid #ccc; border-radius: 4px;
+  font-size: 1rem;
+}
+.contact-form button {
+  background: var(--primary);
+  color: #fff;
+  padding: .75rem 1.5rem;
+  border: none; border-radius: 30px;
+  font-size: 1rem; cursor: pointer;
+  transition: background .3s, transform .2s;
+}
+.contact-form button:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+/* ===== Procedimiento Conciliatorio ===== */
+.procedimiento-conciliatorio {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #f5fbff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.titulo-principal {
+  text-align: center;
+  color: #1976d2;
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+/* Cada ítem (cada <details>) */
+.procedimiento-conciliatorio .item {
+  background: #e3f2fd;
+  border-left: 4px solid #1976d2;
+  margin-bottom: 0.8rem;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+.procedimiento-conciliatorio .item:hover {
+  box-shadow: 0 2px 12px rgba(25,118,210,0.2);
+}
+
+/* El encabezado (summary) */
+.procedimiento-conciliatorio .item summary {
+  position: relative;
+  padding: 0.8rem 1rem 0.8rem 2.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0d47a1;
+  cursor: pointer;
+  user-select: none;
+  list-style: none; /* oculta marcador por defecto */
+}
+
+/* Ocultamos el marcador por defecto */
+.procedimiento-conciliatorio .item summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Icono “+” / “–” */
+.procedimiento-conciliatorio .item summary::before {
+  content: "+";
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #1976d2;
+  transition: transform 0.2s;
+}
+
+/* Cuando está abierto, cambiamos fondo y el signo */
+.procedimiento-conciliatorio .item[open] {
+  background: #bbdefb;
+}
+.procedimiento-conciliatorio .item[open] summary::before {
+  content: "–";
+}
+
+/* El contenido desplegable */
+.procedimiento-conciliatorio .item p {
+  margin: 0;
+  padding: 0.75rem 1rem 1rem 2.8rem;
+  background: #fff;
+  border-top: 1px solid #cce0f5;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .procedimiento-conciliatorio {
+    padding: 1rem;
+  }
+  .procedimiento-conciliatorio .item summary,
+  .procedimiento-conciliatorio .item p {
+    padding-left: 2.4rem;
+  }
+}
+
+/* ===== Pie de Página Empresarial ===== */
+.footer-empresarial {
+  background: #222;
+  color: #eee;
+  padding: 2rem 1rem;
+}
+.footer-empresarial .footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+.footer-empresarial .footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footer-empresarial .footer-logo img {
+  height: 45px;
+}
+.footer-empresarial .footer-logo span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+}
+.footer-empresarial .footer-links,
+.footer-empresarial .footer-contacto {
+  flex: 1 1 200px;
+}
+.footer-empresarial .footer-links h4,
+.footer-empresarial .footer-contacto h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #b0d8ff;
+}
+.footer-empresarial .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-empresarial .footer-links li {
+  margin-bottom: 0.4rem;
+}
+.footer-empresarial .footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-empresarial .footer-links a:hover {
+  color: #fff;
+}
+.footer-empresarial .footer-contacto p {
+  line-height: 1.6;
+  margin: 0;
+}
+.footer-empresarial .footer-contacto p a {
+  color: #b0d8ff;
+  text-decoration: none;
+}
+.footer-empresarial .footer-contacto p a:hover {
+  text-decoration: underline;
+}
+
+.footer-empresarial .footer-bottom {
+  border-top: 1px solid #444;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .footer-empresarial .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-empresarial .footer-links,
+  .footer-empresarial .footer-contacto {
+    flex: 1 1 100%;
+    margin-top: 1rem;
+  }
+}
+
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .video-content h1 { font-size: 2rem; }
+  .prev, .next { font-size: 1.2rem; padding: .4rem .8rem; }
+  .procedimiento-conciliatorio {
+    padding: 1rem;
+  }
+  .chatbox { width: 90%; right: 5%; }
+}

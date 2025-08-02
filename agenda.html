@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agendar Cita | Centro de Conciliación</title>
+  <link rel="stylesheet" href="estiloagenda.css" />
+  <link rel="stylesheet" href="estilo_inicio.css" />
+  <link rel="icon" href="img/logof.jpg" type="image/x-icon">
+  <link rel="shortcut icon" href="img/logof.jpg" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/logof.jpg">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/logof.jpg">
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="img/logof.jpg" alt="Logo Centro" id="logo">
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="agenda.html" class="active">Agendar Cita</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="aula.html">Aula Virtual</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+  <main class="main-content">
+    <section class="sections intro">
+      <h1>Agendar Cita</h1>
+      <p>Complete el formulario para programar su cita.</p>
+    </section>
+    <section class="sections">
+      <form id="agendaForm">
+        <div class="form-group"><label>Nombre</label><input type="text" required></div>
+        <div class="form-group"><label>Email</label><input type="email" required></div>
+        <div class="form-group"><label>Servicio</label><select><option>Conciliación</option><option>Arbitraje</option><option>Amigable Composición</option></select></div>
+        <div class="form-group"><label>Fecha</label><input type="date" required></div>
+        <div class="form-group"><label>Hora</label><input type="time" required></div>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </section>
+  </main>
+<footer class="footer-empresarial">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="img/logof.jpg" alt="Logo" style="height:45px;">
+      <span>Cultura legal</span>
+    </div>
+    <div class="footer-links">
+      <h4>Enlaces Rápidos</h4>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="nosotros.html">Nostros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-contacto">
+      <h4>Contacto</h4>
+      <p>
+        Valledupar, Colombia<br>
+        Tel: (601) 123-4567<br>
+        Email: info@mmserviciosti.com
+      </p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Cultura legal. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
